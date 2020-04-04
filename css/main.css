@@ -1,0 +1,207 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+p, h2 {
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.hidden {
+	display: none;
+}
+
+.close-button {
+	position: relative;
+	top: 4px;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 6px;
+}
+
+.LightBox h2 {
+	margin-left: 100px;
+}
+
+img {
+	background: black;
+	border: 3px solid #FFC119;
+	border-radius: 2%;
+}
+
+p {
+	margin-top: 20px;
+	display: flex;
+	margin-left: 30px;
+	width: 80%;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	font-size: 14px;
+	line-height: 15px;
+}
+
+
+h2:hover {
+	color: #FFC119;
+}
+
+.Can h2 {
+	font-weight: bold;
+	margin-left: 150px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.Ashwin h2 {
+	font-weight: bold;
+	margin-left: 125px;
+	margin-bottom: 5px;
+
+	font-size: 18px;
+}
+
+.title {
+	background-color: #FFC119;
+	color: white;
+	justify-content: center;
+	display: flex;
+	margin-bottom: 20px;
+	height: 50px;
+}
+
+.title h1 {
+	font-size: 30px;
+	font-family: 'Anton', sans-serif;
+	margin-top: 10px;
+	-webkit-text-stroke: 0.75px black;
+	}
+
+
+	.rowPosition {
+		display: flex;
+		flex-direction: row;
+		margin-top: 65px;
+		justify-content: space-evenly;
+	}
+
+
+	.LightBox {
+  position: absolute;
+  top: 193px;
+  width: 300px;
+  height: 325px;
+  justify-content: center;
+  border: 2px solid white;
+   background-color: rgba(0, 0, 0, 0.95);
+   border-radius: 2%;
+  display: none;
+}
+
+.LightBox:hover {
+	border: 2px solid #FFC119;
+}
+
+.show-lightbox {
+  display: block;
+}
+
+.close-button {
+	cursor: pointer;
+}
+
+
+.slide-right{
+   animation: 2s slide-right;
+}
+
+@keyframes slide-right {
+    from {
+       margin-left: 0px;
+    }
+
+    to {
+       margin-left: 150px;
+    }
+ }
+
+
+.slide-left {
+	animation: 2s slide-left;
+}
+
+
+@keyframes slide-left {
+	from {
+		margin-left: 275px;
+	}
+
+	to {
+		margin-left: 125px;
+	}
+}
+
+.fadeIn {
+	    -webkit-animation: fadein 3s; 
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s;
+         -o-animation: fadein 3s; 
+            animation: fadein 3s;
+}
+
+@keyframes fadeIn {
+    from {
+     opacity: 0; 
+ }
+    to   { 
+    	opacity: 1; 
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.bouncingAnimation {
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3);
+}
+  
+ 
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
